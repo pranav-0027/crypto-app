@@ -30,7 +30,7 @@ const Navigation = () => {
             <Link className='nav-link' to='/'>
                 Home
             </Link>
-            <Link className='nav-link' to='/'>
+            <Link className='nav-link' to='/converter'>
                 Crypto Converter
             </Link>
             <Link className='nav-link' to='/'>

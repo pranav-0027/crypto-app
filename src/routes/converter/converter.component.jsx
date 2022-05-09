@@ -1,7 +1,11 @@
 import './converter.styles.scss';
 
 const Converter = () => {
- return 'Hello';
+ return (
+     <div className="main">
+         
+     </div>
+ );
 };
 
 export default Converter;

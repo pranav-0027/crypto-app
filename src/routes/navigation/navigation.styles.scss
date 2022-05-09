@@ -15,6 +15,10 @@
         height: 100%;
         margin-right: 30px;
 
+        @media screen and (max-width: 1300px) {
+            width: 70%;
+        }
+
         .nav-link {
             text-decoration: none;
             color: #F2FF00;
