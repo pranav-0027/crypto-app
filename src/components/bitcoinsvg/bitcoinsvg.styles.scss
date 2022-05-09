@@ -1,0 +1,32 @@
+
+
+.path {
+  stroke-dasharray: 2110;
+  stroke-dashoffset: 2110;
+  stroke-width: 2;
+  stroke-linecap: round;
+  animation: dash 6s linear infinite;
+  fill-opacity: 0;
+  stroke: orange;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 2110;
+    opacity: 0;
+    stroke: orange;
+  }
+  15% {
+    opacity: 1;
+    stroke: orange;
+  }
+  70% {
+    opacity: 1;
+    stroke: orange;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+    stroke: yellow;
+  }
+}
