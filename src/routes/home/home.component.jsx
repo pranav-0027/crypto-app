@@ -108,6 +108,7 @@ const Home = () => {
 
       <div className='fourth-section'>
         <table className='container'>
+        <tbody>
           <tr>
             <th></th>
             <th className='h1'>Cryptocurrency</th>
@@ -146,6 +147,7 @@ const Home = () => {
             <td>Yes, but only where merchants accept it</td>
             <td>Yes, but typically only in the country that issues it</td>
           </tr>
+          </tbody>
         </table>
       </div>
 
