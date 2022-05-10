@@ -1,6 +1,7 @@
 import './slider.styles.scss';
 
 const Slider = () => {
+  // Each div holds one slider component
   return (
     <div className='price-container'>
       <div className='price-box'>

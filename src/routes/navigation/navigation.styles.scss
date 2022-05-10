@@ -9,15 +9,15 @@
     align-items: center;
     .nav-links {
         display: flex;
-        width: 20%;
-        justify-content: space-between;
+        width: 300px;
+        justify-content: space-around;
         align-items: center;
         height: 100%;
         margin-right: 30px;
 
-        @media screen and (max-width: 1300px) {
-            width: 70%;
-        }
+        // @media screen and (max-width: 1300px) {
+        //     width: 70%;
+        // }
 
         .nav-link {
             text-decoration: none;

@@ -1,12 +1,13 @@
 import './converter.styles.scss';
 import { useEffect, useState } from 'react';
-import arrowimg from '../../assets/images/arrow.png'
+import arrowimg from '../../assets/images/arrow.png';
 
 import CurrencyField from '../../components/currencyfield/currencyfield.component';
 
 const API_URL = 'https://blockchain.info/ticker';
 
 const Converter = () => {
+  // Creating various states to watch the different parameters
   const [currOptions, setCurrOptions] = useState([]);
   const [fromCurrency, setFromCurrency] = useState();
   const [toCurrency, setToCurrency] = useState();
@@ -14,6 +15,7 @@ const Converter = () => {
   const [amountInFromCurrency, setAmountInFromCurrency] = useState(true);
   const [exchangeRate, setExchangeRate] = useState();
 
+  // Logic for checking which textbox is the user applying changes to
   let toAmount, fromAmount;
   if (amountInFromCurrency) {
     fromAmount = amount;
@@ -24,11 +26,13 @@ const Converter = () => {
   }
 
   useEffect(() => {
+    // We fetch the json first time for setting the base values
     fetch(API_URL)
       .then((res) => res.json())
       .then((data) => {
         const firstCurrency = 'INR';
         const secondCurrency = 'USD';
+        // Creating the option list array
         setCurrOptions([...Object.keys(data)]);
         setFromCurrency(firstCurrency);
         setToCurrency(secondCurrency);
@@ -37,6 +41,7 @@ const Converter = () => {
       });
   }, []);
 
+  // Use effect that watches change in amount of texboxes
   useEffect(() => {
     fetch(API_URL)
       .then((res) => res.json())
@@ -46,6 +51,7 @@ const Converter = () => {
       });
   }, [fromCurrency, toCurrency]);
 
+  // On change functions for handling amount changes in both text boxes
   const handleFromAmountChange = (e) => {
     setAmount(e.target.value);
     setAmountInFromCurrency(true);
@@ -56,6 +62,7 @@ const Converter = () => {
   };
 
   return (
+    // applying props to the CurrencyField Component
     <div className='main'>
       <h1>Currency Converter</h1>
       <div className='wrap'>
@@ -66,7 +73,7 @@ const Converter = () => {
           amount={fromAmount}
           onChangeAmount={handleFromAmountChange}
         />
-				<img src={arrowimg} alt="arrow" />
+        <img src={arrowimg} alt='arrow' />
         <CurrencyField
           currOptions={currOptions}
           selectedCurrency={toCurrency}

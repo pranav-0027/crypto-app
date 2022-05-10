@@ -7,6 +7,7 @@ import crypto2 from '../../assets/images/crypto2.jpg';
 import Slider from '../../components/slider/slider.component';
 
 const Home = () => {
+  // The home is divided into several sections each with different html structure and different styles
   return (
     <div className='sections'>
       <div className='first-section'>
@@ -108,45 +109,45 @@ const Home = () => {
 
       <div className='fourth-section'>
         <table className='container'>
-        <tbody>
-          <tr>
-            <th></th>
-            <th className='h1'>Cryptocurrency</th>
-            <th className='h2'>Other Currency</th>
-          </tr>
-          <tr>
-            <td>Who manages it?</td>
-            <td>A network of computers running open source code</td>
-            <td>The government that issues it</td>
-          </tr>
-          <tr>
-            <td>How does it hold its value</td>
-            <td>Primarily based on supply and demand</td>
-            <td>
-              Primarily based on confidence in the government that issues it
-            </td>
-          </tr>
-          <tr>
-            <td>How is it secured?</td>
-            <td>
-              By a network of computers that verify every transaction - anyone
-              with an internet connection can participate
-            </td>
-            <td>
-              By third parties like banks and governments - only a select few
-              can participate
-            </td>
-          </tr>
-          <tr>
-            <td>Are there physical bills or coins?</td>
-            <td>No</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Can I buy things with it?</td>
-            <td>Yes, but only where merchants accept it</td>
-            <td>Yes, but typically only in the country that issues it</td>
-          </tr>
+          <tbody>
+            <tr>
+              <th></th>
+              <th className='h1'>Cryptocurrency</th>
+              <th className='h2'>Other Currency</th>
+            </tr>
+            <tr>
+              <td>Who manages it?</td>
+              <td>A network of computers running open source code</td>
+              <td>The government that issues it</td>
+            </tr>
+            <tr>
+              <td>How does it hold its value</td>
+              <td>Primarily based on supply and demand</td>
+              <td>
+                Primarily based on confidence in the government that issues it
+              </td>
+            </tr>
+            <tr>
+              <td>How is it secured?</td>
+              <td>
+                By a network of computers that verify every transaction - anyone
+                with an internet connection can participate
+              </td>
+              <td>
+                By third parties like banks and governments - only a select few
+                can participate
+              </td>
+            </tr>
+            <tr>
+              <td>Are there physical bills or coins?</td>
+              <td>No</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Can I buy things with it?</td>
+              <td>Yes, but only where merchants accept it</td>
+              <td>Yes, but typically only in the country that issues it</td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -331,6 +332,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/* The slider component is the eighth section */}
       <div className='eighth-section'>
         <Slider />
       </div>

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 .logo-size {
   position: relative;
@@ -23,6 +23,7 @@
   align-items: center;
   flex-direction: row;
   gap: 27rem;
+  // animating the movment of the components
   animation: scrolling 30s linear infinite;
 }
 
@@ -49,13 +50,13 @@
 .currency-id {
   font-size: 2rem;
   color: rgb(255, 255, 255);
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
 }
 .price-styling {
   color: rgb(255, 255, 255);
   font-size: 2rem;
   z-index: 2;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
 }
 
 .box-styling {
@@ -72,11 +73,10 @@
   align-items: center;
   flex-direction: column;
   gap: 0rem;
-
 }
 
 .change-styling {
   font-size: 2rem;
   z-index: 2;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
 }
